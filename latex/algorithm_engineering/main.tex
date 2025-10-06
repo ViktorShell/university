@@ -1,0 +1,59 @@
+\documentclass[12pt,a4paper]{article}
+
+% ----- Useful packages -----
+\usepackage[utf8]{inputenc}           % allows UTF-8 characters
+\usepackage[T1]{fontenc}              % better font output
+\usepackage[english]{babel}           % language
+\usepackage{amsmath, amssymb}         % math
+\usepackage{amsthm}                   % theorem/definition
+\usepackage{cancel}                   % add the cancer for math symbol
+\usepackage{hyperref}                 % links inside the PDF
+\usepackage{enumitem}                 % let you change list arrow
+\usepackage{geometry}                 % margins
+\usepackage{subcaption}               % align images
+\usepackage{graphicx}                 % images loader
+\usepackage{caption}                  % better image caption control
+\usepackage{fontspec}                 % change font
+\usepackage{algorithm}                % pseudocode
+\usepackage{algpseudocode}            % pseudocode
+\geometry{a4paper, margin=2.5cm}
+%\setmainfont{DejaVu Sans}
+
+% --- Style section ---
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% --- Env settings ---
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{observation}[theorem]{Observation}
+
+% --- Info documento ---
+\title{
+  {
+    \Large
+    \bfseries{University of Pisa}
+  }
+
+  Algorithm Engineering
+}
+\author{Enrico Fiasco}
+\date{Year 2025}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\include{chapters/sampling_and_sorting}
+
+\end{document}

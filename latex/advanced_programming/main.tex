@@ -1,0 +1,81 @@
+\documentclass[11pt,a4paper]{article}
+
+% ----- Useful packages -----
+\usepackage[utf8]{inputenc}           % allows UTF-8 characters
+\usepackage[T1]{fontenc}              % better font output
+\usepackage[english,italian]{babel}   % language
+\usepackage{amsmath, amssymb}         % math
+\usepackage{amsthm}                   % theorem/definition
+\usepackage{hyperref}                 % links inside the PDF
+\usepackage{enumitem}                 % let you change list arrow
+\usepackage{geometry}                 % margins
+\usepackage{subcaption}               % align images
+\usepackage{graphicx}                 % images loader
+\usepackage{fontspec}                 % change font
+\geometry{a4paper, margin=2.5cm}
+%\setmainfont{Noto Sans}
+
+% --- Style section ---
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection}{1em}{}
+
+% --- Env settings ---
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\theoremstyle{remark}
+\newtheorem{observation}[theorem]{Observation}
+
+% --- Info documento ---
+\title{
+  {
+    \Large
+    \bfseries{University of Pisa}
+  }
+
+  Advanced Programming
+}
+\author{Enrico Fiasco}
+\date{Year 2025}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Capitolo 1}
+Breve introduzione al contenuto del capitolo.
+
+\subsection{Concetto principale}
+Qui scrivi il riassunto.
+
+\begin{definition}
+  Una definizione importante spiegata in breve.
+  Un teorema fondamentale con eventuale formula:
+  \[
+    a^2 + b^2 = c^2
+  \]
+\end{definition}
+
+\section{new}
+Appunti personali, collegamenti o osservazioni pratiche.
+
+\subsection{Lista di punti chiave}
+%\begin{itemize}[label=.]
+\begin{itemize}
+  \item Punto 1
+  \item Punto 2
+  \item Punto 3
+\end{itemize}
+
+\section{Capitolo 2}
+Altri riassunti...
+
+\end{document}
